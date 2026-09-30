@@ -2,11 +2,10 @@
 <html lang="vi">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Mophongdinhligioihantrungtam">
     <title>MophongCLT</title>
-    <link rel="stylesheet"
-href="{{url_for(’static’, path=’/css/style.css’) }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
 </head>
 <body>
     <header class="hero">
@@ -16,16 +15,13 @@ href="{{url_for(’static’, path=’/css/style.css’) }}">
             <p>Quansatphanphoicuatrungbinhmaukhi ntang.</p>
         </div>
     </header>
-    <main class="containergrid">
-        <section class="cardvideo-card">
+    <main class="container grid">
+        <section class="card video-card">
             <h2>Videomophong</h2>
-            <videocontrolsplaysinline preload="metadata"
-            aria-label="Video mophongdinhligioihantrungtam">
-            <source
-            src="{{url_for(’static’, path=’/video/clt_simulation.mp4’)}}"
-            type="video/mp4">
-            TrinhduyetcuabankhonghotrovideoHTML5.
-        </video>
+            <video controls playsinline preload="metadata" aria-label="Video mophongdinhligioihantrungtam">
+                <source src="{{ url_for('static', path='/video/clt_simulation.mp4') }}" type="video/mp4">
+                TrinhduyetcuabankhonghotrovideoHTML5.
+            </video>
         </section>
         <aside class="card">
             <h2>Cach quansat</h2>
